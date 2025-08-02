@@ -1,0 +1,573 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+#firstpage{
+    width: 100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 150px;
+    padding-top: 60px;
+    word-spacing: 5px;
+    color: orange;
+    border: 1px solid black;
+    background-image: url(./images/hero-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.page{
+  color:rgb(178, 178,178) ;
+  width: 100px;
+  transition: all .8s ease;
+
+}
+.page:hover{
+  color: red;
+  transform: rotateY(360deg);
+}
+    
+
+#navbar{
+    width: 100%;
+    height:80px ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 05px 05px 10px 0 white;
+    position: absolute;
+    z-index: 5;   
+}
+#navbar nav ul{
+display: flex;
+gap: 50px;
+list-style: none;
+}
+#navbar nav ul a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.icon{
+    color: white;
+    display: flex;
+    cursor: pointer;
+    gap: 3px;
+    box-shadow:0 0 10px black, 0 0 10px black, 0 0 10px black;
+    transition:box-shadow 0.4s ease-in;
+}
+.icon:hover{
+    box-shadow: 0 0 10px orange, 0 0 10px orange, 0 0 10px orange; 
+}
+.nav-link{
+position: relative;
+transition: all 0.3s ease;
+
+
+}
+.nav-link:hover{
+    color: black;
+    text-shadow:  0 0 10px orange, 0 0 10px orange, 0 0 10px orange; 
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  width: 15%;
+  height: 1px;
+  background-color:green;
+  box-shadow: 0 0 5px orange, 0 0 10px orange ;
+  transition: width 0.3s ease;}
+  .nav-link:hover::after{
+    width: 110%;
+  }
+  .page{
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+  }
+  
+  .text{
+    display: flex;
+    display: inline-block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 60px;
+    transition: transform 0.4s ease; 
+    color: white;   
+  }
+  .text:hover{
+    transform: translateY(-15px);
+    color: green;
+
+
+  }
+  .text1{
+    display: inline-block;
+    font-size: medium;
+    font-weight: lighter;
+    transition: transform 0.4s ease;
+    color: white;
+
+  }
+  .text1:hover{
+    transform: translateY(-15px);
+    color: orange;}
+
+
+  .box {
+  position: relative;
+  width: 250px;
+  padding: 20px;
+  font-weight:   bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 1;
+  border: none;
+  transition: all .8s ease-in;
+
+}
+.box:hover{
+  color: white;
+}
+/* Partial border corners */
+.box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 25%;
+  border-top: 1px solid orange;
+  border-left: 1px solid green;
+  transition: all 0.5s ease;
+  pointer-events: none;
+}
+
+.box::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 15%;
+  height: 20%;
+  border-bottom: 1px solid green;
+  border-right: 1px solid orange;
+  transition: all 0.5s ease;
+  pointer-events: none;
+}
+
+/* On hover — extend corners into full border */
+.box:hover::before,
+.box:hover::after {
+  width: 100%;
+  height: 100%;
+  transform: rotate(360deg);
+}
+
+#navbar nav ul li {
+  position: relative;
+}
+.dropdown{
+  display: none !important;
+  flex-direction: column;
+  position: absolute;
+  top: 130%;
+  left: 0;
+  background-color:rgb(13,0,40);
+  text-align: center;
+  width: 100px;
+  justify-content: center;
+  max-height: 250px;
+}
+.dropdown li{
+  display: block;
+}
+.dropdown li a {
+  display: block;
+  padding: 10px ;
+  text-decoration: none;
+  color: white;
+}
+ .dropdown li:hover{
+  background-color:orange;
+ } 
+#navbar nav ul li:hover .dropdown {
+  display: block !important;}
+#secondpage{
+  width: 100%;
+  height: 90vh;
+  background-color: rgb(16,0,40);
+  padding-top: 110px;
+  padding-bottom: 60px;
+  display: flex;
+  margin-right: 50px;
+}
+.card1{
+  width: 300px;
+  height: 300px;
+  padding-bottom: 180px;
+  margin-left: 150px;
+  /* border: 1px solid white; */
+  color: white;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  transition: all .8s ease-in;
+}
+.card1:hover{
+  color: orange;
+}
+.card2{
+  width: 350px;
+  height: 480px;
+  padding-bottom: 180px;
+  margin-left: 150px;
+  /* border: 1px solid white; */
+  color: white;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+.card3{
+  width: 350px;
+  height: 480px;
+  padding-bottom: 180px;
+  margin-right: 150px;
+  margin-left: 60px;
+  /* border: 1px solid white; */
+  color: white;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+card3.{
+  transition: ;
+}
+.card3:hover{
+  color:green;
+  transform: translateY(-15deg);
+}
+
+
+.card1 .service{
+  display:flex ;
+  justify-content: center;
+  word-spacing: 5px;
+}
+.smcn1{
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border: 1px solid cyan;
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  transition: all .8s ease;
+}
+.smcn1:hover{
+  transform: rotate(-45deg);
+ border-radius:50% ;
+}
+.smcn2{
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border: 1px solid cyan;
+  margin-left: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  transition: all .3s ease-in ;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  transition: all .8s ease;
+}
+.smcn2:hover{
+  transform: rotate(-45deg);
+  border-radius:50% ;
+}
+.smcn3{
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border: 1px solid cyan;
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  transition: all .8s ease;
+}
+.smcn3:hover{
+  transform: rotate(-45deg);
+  border-radius:50% ;
+}
+.smcn4{
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border: 1px solid cyan;
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  transition: all .8s ease
+}
+.smcn4:hover{
+  transform: rotate(-45deg);
+  border-radius:50% 
+}
+.card1 p{
+  font-weight:100;
+  text-transform: capitalize;
+}
+
+.box1{
+  position: relative;
+  width: 250px;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-decoration: underline;
+  color: orange;
+  transition: all .8s ease-in;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.box1:hover{
+  color: white;
+}
+.box1::before{
+  content: '';
+  position: absolute;
+  top:0 ;
+  left: 0;
+  width: 20%;
+  height: 20%;
+  border-top: 1px solid orange;
+  border-left: 1px solid green;
+  transition: all 0.7s ease;
+  pointer-events: none;
+
+}
+.box1::after{
+  content: '';
+  position: absolute;
+  bottom:0 ;
+  right: 0;
+  width: 20%;
+  height: 20%;
+  border-bottom: 1px solid green;
+  border-right: 1px solid orange;
+  transition: all 0.7s ease;
+  pointer-events: none;
+}
+ .box1:hover::before, 
+.box1:hover::after{
+  width: 100%;
+  height: 100%;
+  transform: rotate(360deg);
+} 
+h2{
+  font-weight:400;
+  font-size: 15px;
+}
+
+.service{
+position: relative;
+transition: all .8s ease;
+}
+.service::after{
+  content: '';
+  position: absolute;
+  width: 10%;
+  left: 0;
+  bottom: -5px;
+  height: 3px;
+  background-color:wheat;
+  box-shadow: 0 0 10px orange, 0 0 10px orange ;
+  transition: width 1s ease;
+  
+}
+.service:hover::after{
+  width: 100%;
+}
+  #thirdpage{
+    width: 100%;
+    height: 120vh;
+    /* border: 1px solid green; */
+  /* display: flex;
+  justify-content: center; */
+   background-color: rgb(16,0,40);
+  }
+  #thirdpage .container{
+   width: 100%;
+   height: 100%;
+   margin: 15px;
+   margin-top: 10PX;
+    color: white;
+    /* border: 1px solid white; */
+    display: grid;
+    /* justify-content: center; */
+    gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+    overflow: hidden;
+    
+  }
+  .container img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  display: block;
+}
+ 
+  
+  .item1{
+  max-width: 100%;
+  height: 80%;
+  display: block;
+  object-fit: cover;
+    /* background: red; */
+    grid-column:1
+  }
+  .item2{
+     width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    /* background: red; */
+    grid-column:2 /span 2;
+  }
+
+  .item3{
+      width: 100%;
+     height: 100%;
+    /* background: red; */
+    grid-column:4;
+    grid-row: 1 / span 3;
+  }
+
+  .item4{
+    top: 0;
+      width: 100%;
+      height: 100%;
+    
+    /* background: red; */
+    grid-column: 1;
+  }
+  .item5{
+      width:100%;
+  height: 100%;
+    /* background: red; */
+    grid-column:2
+  }
+
+  .item6{
+      width: 100%;
+      height: 100%;
+    /* background: red; */
+       grid-column: 3;
+  }
+
+
+  .box2{
+  position: relative;
+  width: 250px;
+  height: 70px;
+  margin-bottom: 2px;
+  margin-top: 30px;
+  margin-left: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-decoration: underline;
+  color: orange;
+  transition: all .5s ease-in;
+  cursor: pointer;
+  z-index: 3;
+}
+.box2:hover{
+  color: white;
+}
+.box2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 25%;
+  border-top: 1px solid orange;
+  border-left: 1px solid green;
+  transition: all 0.5s ease;
+  pointer-events: none;
+}
+
+.box2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 15%;
+  height: 20%;
+  border-bottom: 1px solid green;
+  border-right: 1px solid orange;
+  transition: all 0.5s ease;
+  pointer-events: none;
+}
+
+/* On hover — extend corners into full border */
+.box2:hover::before,
+.box2:hover::after {
+  width: 100%;
+  height: 100%;
+  transform: rotate(360deg);
+}
+.pop {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Overlay Styling */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: rgba(0, 0, 0, 0.6);
+  color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Show overlay on hover */
+.pop:hover .overlay {
+  opacity: 2;
+  transform: translateY(0);
+}
