@@ -58,7 +58,6 @@ list-style: none;
     color: white;
     display: flex;
     cursor: pointer;
-    gap: 3px;
     box-shadow:0 0 10px black, 0 0 10px black, 0 0 10px black;
     transition:box-shadow 0.4s ease-in;
 }
@@ -858,6 +857,9 @@ box-shadow: 10px 10px rgba(0, 0, 0, 0.447);
   padding-top: 60px;
   text-align: center;
  }
+ #sixthpage .mtext{
+  position: absolute;
+ }
  #sixthpage .underline{
   position: relative;
   color: white;
@@ -876,3 +878,248 @@ box-shadow: 10px 10px rgba(0, 0, 0, 0.447);
  #sixthpage .underline:hover::after{
   width: 100%;
  }
+ #sixthpage .middle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 900px;
+  gap: 50px;
+ }
+ #sixthpage .bimage1{
+  width: 360px;
+  height: 364px;
+  border: 1px solid white;
+  margin-bottom: 200px;
+  padding-top: 20px;
+  font-size: larger;
+  cursor: pointer;
+  transition: all .8s ease;
+ }
+ #sixthpage .bimage1:hover{
+  background-image: url(./images/blog-1.jpg);
+  background-size: cover;
+  transform: translateY(-15px);
+ }
+#sixthpage .bimage2{
+  width: 360px;
+  height: 364px;
+  border: 1px solid white;
+  margin-bottom: 200px;
+  padding-top: 20px;
+  font-size: larger;
+  cursor: pointer;
+  transition: all .8s ease;
+ }
+ #sixthpage .bimage2:hover{
+  background-image: url(./images/blog-1.jpg);
+  background-size: cover;
+  transform: translateY(-15px);
+}
+  
+ #sixthpage .bimage3{
+  width: 360px;
+  height: 364px;
+  border: 1px solid white;
+  margin-bottom: 200px;
+  padding-top: 20px;
+  font-size: larger;
+  transition: all .8s ease;
+  cursor: pointer;
+ }
+ #sixthpage .bimage3:hover{
+  background-image: url(./images/blog-1.jpg);
+  background-size: cover;
+  transform: translateY(-15px);
+}
+ #sixthpage .bimage1 p{
+  font-weight: lighter;
+ }
+ #sixthpage .bimage2 p{
+  font-weight: lighter;
+ }
+ #sixthpage .bimage3 p{
+  font-weight: 100;
+ }
+ #seventhpage{
+  width: 100%;
+  height: 60vh;
+  background-image: url(./images/callto-bg\ .jpg);
+  background-size: cover;
+  position: relative;
+ }
+  #seventhpage .eve{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  align-items: center;
+  color: white;
+  width: 750px;
+  height: 300px;
+  /* border: 1px solid black; */
+  margin-top: 80px;
+  margin-left: 250px;
+  font-size: 30px;
+  }
+  #seventhpage p{
+    font-size:large;
+    margin-left:-420px;
+  }
+  #seventhpage button{
+    position:relative;
+    padding: 20px;
+    margin-left: -480px;
+    background-color:black;
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    transition: all .5s ease;
+    cursor: pointer;
+  }
+  #seventhpage button:hover{
+    background-color: rgba(0, 255, 255, 0.321);
+    color:black;
+    transform: scale(1.1);
+  }
+  #footer{
+    width: 100%;
+    height: 80vh;
+    border: 1px solid black;
+    background-color: rgb(16,0,40);
+   
+  }
+   .footlink{
+    width: 80%;
+   display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    margin-left: 120px;
+     border-bottom: 1px solid rgba(255, 255, 255, 0.337);
+   }
+   .footbar{
+    width: 400px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+   }
+  .cardholder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .cardholder .footcard1{
+    margin-top: 50px;
+    width: 200px;
+    height: 300px;
+    /* border: 1px solid white; */
+    color: white;
+    padding: 20px;
+    word-spacing: 2px;
+    transition: all .5s ease;
+  }
+  .cardholder .footcard1:hover{
+    transform: translateY(-5px);
+    color: orange;
+  }
+
+  .cardholder .footcard1 h3{
+    cursor: pointer;
+  }
+  .cardholder .footcard2{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+    /* border: 1px solid white; */
+    color: white;
+    padding: 20px;
+    transition: all .5s ease;
+  }
+  .cardholder .footcard2:hover{
+    transform: translateY(-5px);
+    color:cyan;
+  }
+  .cardholder .footcard2 a{
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+  }
+  .cardholder .footcard2:hover a{
+    transform: translateY(-5px);
+    color: yellow;
+  }
+  .cardholder .footcard3{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+    /* border: 1px solid white; */
+    color: white;
+    padding: 20px;
+    transition: all .5s ease;
+  }
+  .cardholder .footcard3:hover{
+    transform: translateY(-5px);
+    color: green;
+  }
+  .cardholder .footcard3 a{
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+  }
+  .cardholder .footcard3:hover a{
+    transform: translateY(-5px);
+    color: grey;
+  }
+
+  
+  .cardholder .footcard4{
+    margin-top: 50px;
+    height: 300px;
+    /* border: 1px solid white; */
+    color: white;
+    padding: 20px;
+    transition: all .5s ease;
+  }
+  .cardholder .footcard4 #einput{
+    height: 50px;
+    width: 200px;
+    padding: 0 10px;
+    /* border: 1px solid black; */
+    border-right: none;
+  }
+  .cardholder .footcard4:hover #einput{
+    transform: translateY(-5px);
+  }
+.cardholder .footcard4 .wrap{
+  display: flex;
+  align-items: center; 
+}
+#einput:focus,
+.remove:focus{
+  outline: none;
+  box-shadow: none;
+}
+.cardholder .footcard4 button i{
+    background-color: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    font-size: 40px;
+    left: 0;
+    cursor: pointer;
+  }
+
+  .cardholder .footcard4:hover button{
+    transform: translateY(-5px);
+  }
