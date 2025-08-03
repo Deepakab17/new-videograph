@@ -1123,3 +1123,21 @@ box-shadow: 10px 10px rgba(0, 0, 0, 0.447);
   .cardholder .footcard4:hover button{
     transform: translateY(-5px);
   }
+  #footer .end{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color: wheat;
+    border-top: 1px solid rgba(255, 255, 255, 0.364);
+    margin-left: 150px;
+    padding-top: 30px;
+
+  }
+  #footer .end i{
+    color:cyan;
+  }
+  #footer .end a{
+    color:cyan;
+    text-decoration: none;
+  }
