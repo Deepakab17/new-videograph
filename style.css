@@ -19,6 +19,9 @@ box-sizing: border-box;
     background-position: center;
     background-attachment: fixed;
 }
+html{
+  scroll-behavior: smooth;
+}
 .page{
   color:rgb(178, 178,178) ;
   width: 100px;
@@ -185,9 +188,9 @@ transition: all 0.3s ease;
   justify-content: center;
   max-height: 250px;
 }
-.dropdown li{
+/* .dropdown li{
   display: block;
-}
+} */
 .dropdown li a {
   display: block;
   padding: 10px ;
@@ -909,12 +912,13 @@ box-shadow: 10px 10px rgba(0, 0, 0, 0.447);
   padding-top: 20px;
   font-size: larger;
   cursor: pointer;
+  transform: translateY(-15px);
   transition: all .8s ease;
  }
  #sixthpage .bimage2:hover{
   background-image: url(./images/blog-1.jpg);
   background-size: cover;
-  transform: translateY(-15px);
+  transform: translateY(30px);
 }
   
  #sixthpage .bimage3{
@@ -1053,7 +1057,7 @@ box-shadow: 10px 10px rgba(0, 0, 0, 0.447);
   }
   .cardholder .footcard2:hover a{
     transform: translateY(-5px);
-    color: yellow;
+    color: red;
   }
   .cardholder .footcard3{
     margin-top: 50px;
