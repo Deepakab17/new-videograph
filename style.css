@@ -893,6 +893,7 @@ box-shadow: 10px 10px rgba(0, 0, 0, 0.447);
   padding-top: 20px;
   font-size: larger;
   cursor: pointer;
+  word-spacing: 3px;
   transition: all .8s ease;
  }
  #sixthpage .bimage1:hover{
@@ -908,6 +909,7 @@ box-shadow: 10px 10px rgba(0, 0, 0, 0.447);
   padding-top: 20px;
   font-size: larger;
   cursor: pointer;
+  word-spacing: 3px;
   transform: translateY(-15px);
   transition: all .8s ease;
  }
@@ -924,8 +926,10 @@ box-shadow: 10px 10px rgba(0, 0, 0, 0.447);
   margin-bottom: 200px;
   padding-top: 20px;
   font-size: larger;
+  word-spacing: 3px;
   transition: all .8s ease;
   cursor: pointer;
+  
  }
  #sixthpage .bimage3:hover{
   background-image: url(./images/blog-1.jpg);
