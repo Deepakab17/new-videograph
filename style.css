@@ -412,6 +412,7 @@ transition: all .8s ease;
 .service:hover::after{
   width: 100%;
 }
+/* ====================================thirdpage======================================= */
   #thirdpage{
     width: 100%;
     height: 105vh;
@@ -628,6 +629,7 @@ transition: all .8s ease;
   height: 100%;
   transform: rotate(360deg); */
 /* } */
+/* ==============================================pagefour================================ */
  #fourthpage {
   width: 100%;
   height:70vh ;
@@ -1159,7 +1161,7 @@ box-shadow: 10px 10px rgba(0, 0, 0, 0.447);
 
      /*=========================================== media query =========================================== */
 
-  @media(max-width:430px){
+  @media(max-width:450px){
 
     #navbar nav ul{
 display: none;
@@ -1297,8 +1299,102 @@ left: 0;
   height:auto;
   margin-left:5px;
 }
+.box2{
+  display: none;
+}
+#fourthpage{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+.diamond1{
+  position: relative;
+  margin-bottom: 150px;
+  left: 0;
+}
+.diamond2{
+  position: relative;
+  margin-top: 200px;
 
+}
+.diamond3{
+  position: relative;
+  margin-bottom:250px ;
+  top: 20px;
+}
+#fifthpage{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  left: 0;
+  background-repeat:no-repeat;
+}
+#fifthpage .sec1{
+  top: 10px;
+  margin-left: 5px;
+  margin-bottom: 500px;
+}
+#fifthpage .sec2{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  justify-content: center;
+}
+#fifthpage .sec3{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1px;
+  
+}
+#fifthpage .sec4{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1px;
+  
+}
+#fifthpage .sec5{
+  width: 100%;
+  height: 100%;
+}
+ #sixthpage{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+  position: relative;
 
-
+ }
+  #sixthpage .middle{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 
   }
+  #sixthpage .mtext{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  position:relative;
+  }
+  #sixthpage .bimage3{
+    display: block;
+  }
+   #sixthpage .bimage3:hover{
+  background-image: url(./images/blog-1.jpg);
+  background-size: cover;
+  transform: translateY(-15px);
+}
+}
+  
