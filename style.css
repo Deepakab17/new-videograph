@@ -1391,10 +1391,5 @@ left: 0;
   #sixthpage .bimage3{
     display: block;
   }
-   #sixthpage .bimage3:hover{
-  background-image: url(./images/blog-1.jpg);
-  background-size: cover;
-  transform: translateY(-15px);
-}
 }
   
