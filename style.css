@@ -1183,13 +1183,28 @@ display: none;
 }
 #bar{
   display:block;
+  margin-top:-20px;
+
 }
 #firstpage{
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: auto;
+  background-image: url(./images/hero-1.jpg);
+  width: 100%;
+  background-size:cover ;
+  background-repeat:no-repeat;
+  background-position: center;
+  height: 100%;
   display: flex;
   top: 50px;
+}
+#firstpage .text1{
+  margin-left: -120px;
+
+}
+#firstpage .text{
+  margin-left: -120px;
+}
+#firstpage .box{
+  margin-left: -120px;
 }
 #firstpage div{
   padding-top: 50px;
@@ -1199,6 +1214,7 @@ display: none;
   position: absolute;
   margin-top: 160px;
   height: 10px;
+  margin-left: -120px;
 
 }
 #firstpage .page:hover{
@@ -1241,6 +1257,7 @@ display: none;
     gap: 10px;
     grid-template-columns: auto;
     overflow: hidden;
+    margin-left: -40px;
     
   }
 
@@ -1290,13 +1307,6 @@ display: none;
     /* background: red; */
        grid-column: none;
   }
-  #firstpage{
-    background-size:contain ;
-    /* background-repeat: no-repeat; */
-    background-position: top center;
-    padding-left: 80px;
-    
-  }
   #firstpage h1{
     font-size: 20px;
   }
@@ -1307,12 +1317,14 @@ display: flex;
 flex-direction: column;
 text-align: start;
 left: 0;
+justify-content: space-evenly;
 }
 
 .card1{
-  width: auto;
+  width: 350px;
   height:auto;
-  margin-left: 5px;
+  margin-left: 10px;
+  font-size: 15px;
 }
 .card2{
   width: auto;
@@ -1352,48 +1364,10 @@ left: 0;
 }
 #fifthpage{
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  left: 0;
-}
- .cnt{
-  width: auto;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
- }
-#fifthpage .sec1{
-  top: 10px;
-  margin-left: 5px;
-  margin-bottom: 0px;
-}
-#fifthpage .sec2{
-  width: 100%;
   height: auto;
-  justify-content: center;
+  display:none;
 }
-#fifthpage .sec3{
-  width: 100%;
-  height: auto;
-  margin-bottom: 1px;
-  
-}
-#fifthpage .sec4{
-  width: 100%;
-  height: auto;
-  
-}
-#fifthpage .sec5{
-  width: 100%;
-  height: auto;
-}
+
  #sixthpage{
   width: 100%;
   height: 100%;
@@ -1421,12 +1395,41 @@ left: 0;
   #sixthpage .bimage3{
     display: block;
   }
-  #seventhpage{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
+
+
+#seventhpage .eve{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  margin-left: 0;
+  margin-top: 100px;
+  background-image: url(./images/callto-bg.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:cover;
+}
+#seventhpage .eve h1{
+  display: inline-block;
+  font-size: 20px;
+  width: 100%;
+}
+#seventhpage p{
+margin-left:-45px;
+} 
+#seventhpage button{
+  margin: 20px;
+}
+#footer{
+  width: 100%;
+  height: auto;
+}
+.cardholder{
+  display: flex;
+  flex-direction: column;
+  margin-left:-30%;
+}
+
 .footcard1{
   width: 100%;
   height: 100%;
@@ -1439,4 +1442,22 @@ left: 0;
     width: 100%;
   height: 100%;
 }
-}  
+.footcard4{
+  width: 100%;
+  height: auto;
+  margin-left: 55%;
+}
+.footbar{
+  width: 100px;
+position: absolute;
+  margin-top: 60px;
+  margin-left:60%;
+}
+div.footlink{
+  margin-left: -80px;
+}
+#footer .end{
+  margin-left: 0;
+}
+}
+
