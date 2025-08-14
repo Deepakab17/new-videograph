@@ -1458,6 +1458,8 @@ div.footlink{
 }
 #footer .end{
   margin-left: 0;
+  margin-top: 10px;
+  padding-bottom: 10px;
 }
 }
 
